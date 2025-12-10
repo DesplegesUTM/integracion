@@ -5,7 +5,7 @@ const app = express();
 const port = process.env.PORT || 4000;
 
 app.use(cors());
-app.use(espress.json());
+app.use(express.json());
 
 app.get('/api/saludo', (req, res) => {
   res.json({ mensaje: 'Hola desde el servidor express' });
